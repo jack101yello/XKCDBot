@@ -1,6 +1,7 @@
 import discord
 from commands import *
 client = discord.Client() # Establishes client
+TOKEN = '' # This is the Bot's token... keep it safe!!!
 
 @client.event
 async def on_ready(): # Runs when the Bot first connects
@@ -14,5 +15,5 @@ async def on_message(message): # Runs when a message is sent
         await message.channel.send(get_response(message.content[5:])) # Sends message
 
 # Commands to run the Bot itself
-client.run('NzUxNTc3MjY3MDc5MjE3MjIz.X1LG4A.7mw9qts6gfzSSXtnjBEz9B-6DD0')
-client.login('NzUxNTc3MjY3MDc5MjE3MjIz.X1LG4A.7mw9qts6gfzSSXtnjBEz9B-6DD0')
+client.run(TOKEN)
+client.login(TOKEN)
