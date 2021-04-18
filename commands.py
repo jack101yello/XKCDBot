@@ -28,7 +28,8 @@ def downloadFileFrom(URL): # Downloads the HTML file for the webpage for the des
 def getURLFromHTML(): # Returns the URL for the image from the HTML webpage for the comic
     f=open('webpage.html')
     lines = f.readlines()
-    line = lines[68]
+    line = lines[59]
+    print(line)
     begin = line.index('"')+3
     end = line.index('"', line.index('"')+1, len(line))
     return "https://" + line[begin:end]
