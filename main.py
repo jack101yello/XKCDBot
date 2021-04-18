@@ -1,7 +1,7 @@
 import discord
 from commands import *
 client = discord.Client() # Establishes client
-TOKEN = 'NzUxNTc3MjY3MDc5MjE3MjIz.X1LG4A.XfX2M2obWOioP6xKrANFoT6InC4' # This is the Bot's token... keep it safe!!!
+TOKEN = 'NzUxNTc3MjY3MDc5MjE3MjIz.X1LG4A.2VCak10M31HNllXHs0qjZZWPbaM' # This is the Bot's token... keep it safe!!!
 
 @client.event
 async def on_ready(): # Runs when the Bot first connects
